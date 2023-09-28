@@ -1,0 +1,23 @@
+.objective-con {
+  padding:5em 0;
+  background: url('./assets/bg-obj.png') no-repeat;
+}
+
+.objective-con >h1{
+    font-size: 3em;
+}
+
+.objective-items{
+    max-width: 90vw;
+
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.objective-items > *{
+  background-color: white;
+}
+
+.objective-description{
+  font-size: 1.5em;
+}

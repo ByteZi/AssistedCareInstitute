@@ -1,0 +1,39 @@
+.nav {
+    position:fixed;
+    padding:0.5em 1em;
+    width:100%;
+    background-color: rgb(20, 20, 20);
+}
+
+.nav-btn{
+    padding:0.6em 1em;
+    margin:0 0.3em;
+    font-size:1em;
+
+    color: rgb(101, 165, 248);
+    font-weight: 600;
+
+    outline: none;
+    cursor:pointer;
+    border:none;
+    background:none;
+}
+
+.contact-btn{
+    background-color: rgb(0, 90, 192);
+    border-radius: 10px;
+    color:white
+}
+
+.nav-btn:hover{
+
+}
+
+
+
+
+
+
+
+
+

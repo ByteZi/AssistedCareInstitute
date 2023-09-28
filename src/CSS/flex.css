@@ -1,0 +1,59 @@
+/* FLEXBOX ===================================== */
+.flex-1 {
+  flex: 1
+}
+
+.flex-2{
+  flex:2
+}
+.flex-3{
+  flex:3
+}
+
+.flex-4{
+  flex:4
+}
+
+.flex-5{
+  flex:5
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.flex {
+  display: flex;
+}
+
+.just-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+
+/* TEXT CENTER */
+
+.text-center{
+  text-align: center;
+}
+

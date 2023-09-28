@@ -1,0 +1,10 @@
+.objective-item{
+    width:20em;
+    padding:2em;
+    margin: 1em;
+    list-style: none;
+
+    border-top: 0.5em solid #3fb9ee;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.315);
+}
+

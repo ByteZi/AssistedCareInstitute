@@ -1,0 +1,23 @@
+.schedule-con{
+    padding:5em;
+}
+
+.schedule-header{
+    margin: 1em;
+}
+
+.month-1-details{
+    justify-content: space-between;
+}
+
+.month-1>h2{
+    background-color: #54c5fa;
+    box-shadow: 5px 5px 0px rgb(180, 238, 248);
+    color:white;
+ 
+    border-radius:500px;
+    font-size:3em;
+    width: 3em;
+    height: 3em;
+    margin: 1em;
+}

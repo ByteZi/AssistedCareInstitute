@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;0,900;1,300;1,500&display=swap');
+
+
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Nanum Myeongjo', serif; */
+:root {
+  --btn-color-prim1-hover: #3a80cc;
+  --btn-color-prim1: #4989CC;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bordert {
+  border: 2px solid red;
+}
+
+.text-divider{
+  font-size:3em;
+  margin:-0.4em 0;
+  color:rgb(83, 172, 255);
+}
+
+h1{
+  font-weight: 800;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+
+
+/* SECTIONS ====================================== */
+
+
+
+/* PRIMARY BTN prim1 ================ */
