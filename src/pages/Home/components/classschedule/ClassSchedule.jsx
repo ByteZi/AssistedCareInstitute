@@ -1,56 +1,28 @@
 import './ClassSchedule.css'
+import Season from './components/Season/Season'
+import { useRef} from 'react'
+import InterestForm from './components/interestform/InterestForm'
 
 const ClassSchedule = () => {
     // make this updatable by admin
+
+    const interestFormRef = useRef()
+
+    const interestFormDisplay = (e) => {
+        e.preventDefault()
+        interestFormRef.current.style.display = "flex"
+    }
+
     return (
-        <div className="schedule-con column flex align-center">
-            <h1 className='schedule-header'>Upcoming Classes</h1>
-
-            <h1>Fall</h1>
-            <p className='text-divider'>━</p>
-            <div className='fall flex wrap just-center'>
-
-                <div className="month-1 flex align-center ">
-                    <h2 className='flex align-center just-center '>Nov</h2>
-                    <div className="month-1-details flex column">
-                        <h3>Weekends</h3>
-                        <p>4-5, 11-12, 18</p>
-                    </div>
-                </div>
-
-                <div className="month-1 flex align-center ">
-                    <h2 className='flex align-center just-center '>Dec</h2>
-                    <div className="month-1-details flex column">
-                        <h3>Weekends</h3>
-                        <p>2-3, 9-10, 16</p>
-                    </div>
-                </div>
-
+        <div className="schedule-con column flex just-center align-center ">
+            <InterestForm interestFormRef={interestFormRef}/>
+            <h1 className='schedule-header text-center'>Upcoming Classes</h1>
+            <p className='text-divider'>━━━━</p>
+            <div className="flex wrap just-center">
+                <Season season={'Fall'} months={['Nov', 'Dec']} days={['4-5, 11-12, 18', '2-3, 9-10, 16']} />
+                <Season season={'Winter'} months={['Jan', 'Feb']} days={['6-7, 20-21, 27', '3-4, 10-11, 24']} />
             </div>
-            <h1>Winter</h1>
-            <p className='text-divider'>━</p>
-            <div className='winter flex wrap just-center'>
-
-                <div className="month-1 flex align-center ">
-                    <h2 className='flex align-center just-center '>Jan</h2>
-                    <div className="month-1-details flex column">
-                        <h3>Weekends</h3>
-                        <p>6-7, 20-21, 27</p>
-                    </div>
-                </div>
-
-                <div className="month-1 flex align-center ">
-                    <h2 className='flex align-center just-center '>Feb</h2>
-                    <div className="month-1-details flex column">
-                        <h3>Weekends</h3>
-                        <p>3-4, 10-11, 24</p>
-                    </div>
-                </div>
-
-            </div>
-
-
-
+            <button onClick={(e) => interestFormDisplay(e)} className="schedule-signup-btn">Reserve</button>
         </div>
     )
 }

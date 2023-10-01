@@ -13,7 +13,7 @@ const CourseObjective = () => {
             <ul className='objective-items flex wrap just-center text-center'>
                 {
                     Objectives.map((item, i) => {
-                        return <ObjectiveItem i={i} item={item} />
+                        return <ObjectiveItem i={i} item={item} key={i} />
                     })
                 }
             </ul>

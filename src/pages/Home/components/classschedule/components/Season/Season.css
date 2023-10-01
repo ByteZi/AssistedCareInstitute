@@ -1,0 +1,22 @@
+
+.season-con{
+    width:40em;
+    padding:3em;
+}
+
+.bullet-sched{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #54c5fa;
+    box-shadow: 5px 5px 0px rgb(180, 238, 248);
+    color:white;
+ 
+    border-radius:500px;
+    font-size:3em;
+    width: 3.2em;
+    height: 3.2em;
+  
+}
+
