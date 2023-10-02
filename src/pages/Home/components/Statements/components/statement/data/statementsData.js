@@ -16,7 +16,7 @@ export default {
     'About' : {
         'statementTitle': "About the owner",
         'statementImg': "./assets/owner/owner.jpg",
-        'statement': `<span className="about-name">Theresa Aguirre</span>, RN, is the owner and training vendor of Assisted Care Institute. A master’s degree prepare registered nurse with more than 15 years of patient care
+        'statement': `Theresa Aguirre, RN, is the owner and training vendor of Assisted Care Institute. A master’s degree prepare registered nurse with more than 15 years of patient care
             experience in a variety of health care settings, Her profesional background includes rhe roles of an inpatient nurse, advice nurse, nurse leader, and nurse educator, offers
             her expertise and valuable experience to provide the students with the knowledge in passing the state certificaton exam. Theresa holds two college degrees, Bachelor of
             Cmputer Schience and Master Degree in Nursing Leadershp and Managment. As a computer science major, her first career was a college professor. She currently works

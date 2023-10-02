@@ -7,14 +7,18 @@
     margin-top:-10vh;
 }
 
-.statement-statement:before {
+.statement-title{
+    margin-left:-0.5vw;
+}
+
+.statement-title:before {
     content: '``';
     position: relative;
-    font-size: 5em;
+    font-size: 2.5em;
     color: #54C5FA;
     font-family: sans-serif;
-    bottom: -50px;
-    left: -30px;
+    left:-20px;
+    margin-right:-0.5em;
 }
 
 .statement-img {

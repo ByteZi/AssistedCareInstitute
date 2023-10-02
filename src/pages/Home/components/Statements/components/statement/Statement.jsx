@@ -1,5 +1,3 @@
-import { useRef } from "react"
-
 const Statement = ({ data, flag }) => {
 
 
@@ -14,15 +12,16 @@ const Statement = ({ data, flag }) => {
                 <div className="statement-statement-con flex-2 just-center align-center ">
                     <p className="statement-statement">
                         <h1 className="statement-title">{data.statementTitle}</h1>
-                        <p className='text-divider'>━━━━━</p>{data.statement}</p>
+                        <p className='text-divider'>━━━━━</p>
+                        {data.statement}</p>
                 </div>
             </div>
             :
             <div className="statement-con-reverse flex just-center align-center">
                 <div className="statement-statement-con flex-2 just-center align-center ">
-                    <p className="statement-statement">
-                        <h1 className="statement-title">{data.statementTitle}</h1>
-                        <p className='text-divider'>━━━━━</p>{data.statement}</p>
+                    <h1 className="statement-title">{data.statementTitle}</h1>
+                    <p className='text-divider'>━━━━━</p>
+                    <p className="statement-statement">{data.statement}</p>
                 </div>
 
                 <div className="statement-img-con  flex flex-1">
