@@ -1,20 +1,27 @@
 .schedule-con {
-    padding: 0;
+    padding: 5em;
+    background-color: rgb(245, 245, 245);
 }
 
 .schedule-header {
-    margin: 1em;
+    font-size: 2.5em;
 }
 
+.schedule-header-con{
+    
+}
+
+
 .schedule-signup-btn {
-    background: linear-gradient(to right,
+    /* background: linear-gradient(to right,
             rgb(70, 156, 255),
             rgb(47, 195, 253),
-            rgb(120, 214, 252));
+            rgb(120, 214, 252)); */
+    background-color: rgb(41, 92, 233);
     padding: 0.5em 1em;
     color: white;
     border-radius: 100px;
     border: none;
-    font-size: 1.2em;
+    font-size: 1.8em;
     cursor: pointer;
 }

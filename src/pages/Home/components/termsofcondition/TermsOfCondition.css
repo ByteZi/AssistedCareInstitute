@@ -1,0 +1,27 @@
+.toc-con {
+    padding: 5em;
+    background-color: #c8f9e469;
+}
+
+.toc-header-con{
+    margin-bottom:2em;
+    font-size:1.5em;
+}
+
+.toc-ol {
+    list-style: none;
+    counter-set: inc;
+    padding-top:2em;
+}
+
+.toc-header-text{
+    font-size:1.6em;
+    width:50vw;
+}
+
+.toc-fail{
+    font-size:1.5em;
+    font-weight:600;
+}
+
+

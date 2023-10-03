@@ -1,10 +1,14 @@
 .objective-item{
-    width:20em;
-    padding:2em;
-    margin: 1em;
-    list-style: none;
+    margin:1.2em 0;
+    font-size:1.5em;
+    font-weight:400;
+}
 
-    border-top: 0.5em solid #3fb9ee;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.315);
+.objective-check{
+    background-color: #b5ebfc;
+    font-size:1.3em;
+    padding:0.2em;
+    border-radius:10px;
+    margin-right:20px;
 }
 

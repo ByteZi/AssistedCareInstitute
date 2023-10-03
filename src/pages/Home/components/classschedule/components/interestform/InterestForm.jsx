@@ -4,8 +4,6 @@ import { useState } from 'react'
 
 const InterestForm = ({interestFormRef}) => {
 
-
-
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -22,11 +20,9 @@ const InterestForm = ({interestFormRef}) => {
     }
 
     return (
-        <div className='interestform-con flex column align-center just-center' ref={interestFormRef}>
-            <h1>Interest Form</h1>
-            <p className='text-divider'>━━━</p>
+        <div className='interestform-con column align-center just-center' ref={interestFormRef}>
+            <h1 className="interestform-header">Interest Form</h1>
             <form className='interestform-module flex column space-between'>
-
                 <span>
                     <input type='text' placeholder='Name' value={formData.name} onChange={e => setFormData({ ...formData, name: e.target.value })} />
                 </span>

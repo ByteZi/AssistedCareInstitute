@@ -1,0 +1,15 @@
+
+.toc-refund-con{
+    padding:5em 20em;
+}
+
+
+.toc-refund-con > p {
+    font-size:1.8em;
+}
+
+@media screen and (max-width:1100px) {
+    .toc-refund-con{
+        padding:5em 10em;
+    }
+}

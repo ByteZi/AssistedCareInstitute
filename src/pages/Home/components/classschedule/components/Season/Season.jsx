@@ -5,7 +5,7 @@ const Season = ({ season, months, days }) => {
 
     return (
         // <div className=" flex">
-        <div className='season-con flex just-center'>
+        <div className='season-con flex just-center  align-center'>
             <h1 className='bullet-sched'>{season}</h1>
             <div className='fall flex column wrap just-center'>
                 {

@@ -1,31 +1,29 @@
-import TermsOfCondition from "./data/TermsOfCondition"
+import TOCData from "./data/TOCItems"
+import TOCListItem from "./components/tocItems/TOCItem"
+import './TermsOfCondition.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAsterisk } from '@fortawesome/free-solid-svg-icons'
 
 const TermsOfCondition = () => {
     return (
-        <div className="TOC-con">
-            <h1>Terms of Conditions</h1>
-            <p>Assisted Care Institute (ACI) is committed to a quality training
+        <div className="toc-con flex column align-center text-center">
+            <div className="toc-header-con flex">
+                <FontAwesomeIcon icon={faAsterisk} className="h1-ast" />
+                <h1 className="toc-header">Terms and Conditions</h1>
+            </div>
+            <p className="toc-header-text">Assisted Care Institute (ACI) is committed to a quality training
                 experience. Therefore, we expect the same level of commitment from our
                 students. By enrolling to ACI’s RCFE ICTP course, you agree in adhering to
                 the following terms and conditions:</p>
-            <ol>
-                {TermsOfCondition.map((i,k) => {
-                    
-                })}
+            <ol className="toc-ol flex space-between wrap just-center">
+                {TOCData.map((i, k) => <TOCListItem item={i} k={k} />)}
             </ol>
-            <p>
+            <p className="toc-fail">
                 Failure to adhere to the terms and conditions may result into termination
-                of service without eligibility for refund.
-            </p>
-            <p>
+                of service without eligibility for refund.<br />
                 ACI reserves the right to refuse service to anyone at anytime at the sole
                 discretion of the training vendor.
             </p>
-            <h2>Refund Policy</h2>
-            <p>While all sales are final, registration fees can be credited towards a future
-                course.  ACI has a 72-hour advanced-notice cancellation policy. The
-                student needs to attend ALL 10 day sessions in order to successfully
-                complete the course.  Refer to the make up policy for more information.</p>
         </div>
     )
 }

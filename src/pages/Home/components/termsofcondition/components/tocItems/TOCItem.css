@@ -1,0 +1,32 @@
+.toc-item {
+   
+    border-top: 8px solid #3F46A3;
+    border-bottom:2px solid black;
+    border-right:2px solid black;
+    border-left:2px solid black;
+    padding: 0em 1em 1em 2em;
+    line-height: 50px;;
+    width: 500px;
+    background-color: white;
+   
+    margin: 3em 1.5em;
+    font-weight: 600;
+    font-size: 1.4em;
+    z-index:1
+}
+
+.toc-item:before {
+    counter-increment: inc;
+    content: "0" counter(inc);
+
+    background-color: #3F46A3;
+
+    border-radius: 100%;
+    padding: 0.2em 0.3em;
+    font-size: 3.5em;
+    position: relative;
+    left: -250px;
+    top:-50px;
+    z-index:-1;
+    color: white;
+}

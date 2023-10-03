@@ -1,39 +1,44 @@
 .nav {
-    position:fixed;
-    padding:0.5em 1em;
-    width:100%;
-    background-color: rgb(20, 20, 20);
+    position: fixed;
+    padding: 1em 1em;
+    width: 100%;
+    z-index: 100;
+    background-color: #273488;
 }
 
-.nav-btn{
-    padding:0.6em 1em;
-    margin:0 0.3em;
-    font-size:1em;
+.nav-logo{
+    color:white;
+    font-size:2.5em
+}
 
-    color: rgb(101, 165, 248);
+.nav-btn {
+    padding: 0.8em 1em;
+    margin: 0 0.3em;
+    font-size: 1em;
+    color: white;
     font-weight: 600;
 
     outline: none;
-    cursor:pointer;
-    border:none;
-    background:none;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 1.2em;
 }
 
-.contact-btn{
-    background-color: rgb(0, 90, 192);
+.nav-btn:hover {
+    color: rgb(49, 152, 221);
+}
+
+
+.contact-btn {
+    background-color: #4574F5;
     border-radius: 10px;
-    color:white
 }
 
-.nav-btn:hover{
-
+.contact-btn:hover {
+    color: white;
 }
 
-
-
-
-
-
-
-
-
+.banner-phone-con{
+    font-size:1.5em;
+}

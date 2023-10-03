@@ -1,6 +1,6 @@
 import './ClassSchedule.css'
 import Season from './components/Season/Season'
-import { useRef} from 'react'
+import { useRef } from 'react'
 import InterestForm from './components/interestform/InterestForm'
 
 const ClassSchedule = () => {
@@ -14,10 +14,12 @@ const ClassSchedule = () => {
     }
 
     return (
-        <div className="schedule-con column flex just-center align-center ">
-            <InterestForm interestFormRef={interestFormRef}/>
-            <h1 className='schedule-header text-center'>Upcoming Classes</h1>
-            <p className='text-divider'>━━━━</p>
+        <div className="schedule-con column flex align-center">
+            <InterestForm interestFormRef={interestFormRef} />
+            {/* <div className="schedule-header-con flex column"> */}
+                {/* <p>Classes</p> */}
+                <h1 className='schedule-header'>Upcoming Classes</h1>
+            {/* </div> */}
             <div className="flex wrap just-center">
                 <Season season={'Fall'} months={['Nov', 'Dec']} days={['4-5, 11-12, 18', '2-3, 9-10, 16']} />
                 <Season season={'Winter'} months={['Jan', 'Feb']} days={['6-7, 20-21, 27', '3-4, 10-11, 24']} />

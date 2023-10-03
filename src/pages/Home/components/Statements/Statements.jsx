@@ -1,14 +1,31 @@
 import './Statements.css'
-import Statement from './components/statement/Statement'
-import statementsData from './components/statement/data/statementsData'
+import stateData from './data/stateData'
 
 const Statements = () => {
 
-
     return (
         <>
-            <Statement data={statementsData.Mission} flag={1}/>
-            <Statement data={statementsData.About} flag={0}/>
+            <div className="statement-con flex align-center">
+                <div className="statement-img-con flex-1">
+                    <img src={require(`${stateData.mission.img}`)} className="statement-img" />
+                </div>
+                <div className="statement-desc-con state-box1 flex-2">
+                    <p className="h1-tip">━ Our Mission</p>
+                    <h1 className="statement-title">{stateData.mission.title}</h1>
+                    <p className="statement-desc">{stateData.mission.statement}</p>
+                </div>
+            </div>
+
+            <div className="statement-con flex align-center">
+                <div className="statement-img-con flex-1">
+                    <img src={require(`${stateData.about.img}`)} className="statement-img" />
+                </div>
+                <div className="statement-desc-con state-box1 flex-2 ">
+                    <p className="h1-tip">━ About the Owner</p>
+                    <h1 className="statement-title">{stateData.about.title}</h1>
+                    <p className="statement-desc">{stateData.about.statement}</p>
+                </div>
+            </div>
         </>
     )
 }

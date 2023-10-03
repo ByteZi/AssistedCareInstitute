@@ -1,0 +1,33 @@
+.footer-con {
+    background-color: rgb(51, 51, 51);
+    padding:1em 5em;
+}
+
+.footer-divider{
+    border-bottom:0.5px solid white;
+    margin-top:1em;
+}
+
+.footer-rows{
+    padding:3em;
+}
+
+.footer-con{
+    color:white;
+}
+
+
+.footer-row > div > h1{
+   
+}
+
+.footer-licensing{
+    
+}
+
+.footer-licensing > a {
+    text-decoration: none;
+    color:white;
+    margin-left:1em;
+    margin-top:0.5em;
+} 

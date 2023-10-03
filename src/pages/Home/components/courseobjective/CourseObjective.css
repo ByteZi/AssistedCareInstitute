@@ -1,23 +1,30 @@
 .objective-con {
-  padding:5em 0;
-  /* background: url('./assets/bg-obj.png') no-repeat; */
+  padding:5em;
 }
 
-.objective-con >h1{
-    font-size: 3em;
+.objective-title-con{
+  margin-bottom:1.2em;
 }
 
-.objective-items{
-    max-width: 90vw;
 
-    font-size: 1.2em;
-    font-family: Arial, Helvetica, sans-serif;
+.objective-title{
+  font-size:3em;
 }
 
-.objective-items > *{
-  background-color: white;
+.objective-desc{
+  font-size:1.4em;
+  font-weight:500;
+  width:40em;
 }
 
-.objective-description{
-  font-size: 1.5em;
+/* .objective-ul{
+  list-style:none;
+} */
+
+@media screen and (max-width:815px) {
+  .objective-desc{
+    width:25em;
+  }
 }
+
+

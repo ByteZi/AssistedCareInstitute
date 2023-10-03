@@ -5,9 +5,7 @@ const Course = () => {
 
     return (
         <div className="course-container section flex column align-center text-center ">
-            <img className='cert' src={require('./assets/certblue.png')}/>
-            < h1 > RCFE Certification</h1 >
-            <p className='text-divider'>━━━</p>
+            < h1 > RCFE & ICTP Certification</h1 >        
             <p className="course-description">The RCFE Initial Certification Training Program (ICTP) is an 80-hour live
                 stream course that prepares the student for the state administrator
                 certification exam. This course focuses on Title 22, and the topics listed in

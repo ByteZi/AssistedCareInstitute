@@ -3,8 +3,11 @@ import Course from './components/course/Course'
 import CourseObjective from './components/courseobjective/CourseObjective'
 import ClassSchedule from './components/classschedule/ClassSchedule'
 import Statements from './components/Statements/Statements'
+import TermsOfCondition from './components/termsofcondition/TermsOfCondition'
+import RefundPolicy from './components/refund/RefundPolicy'
+import Footer from './components/footer/footer'
 
-const Home = (props) => {
+const Home = () => {
     return (
         <>
             <Banner />
@@ -12,6 +15,9 @@ const Home = (props) => {
             <CourseObjective />
             <ClassSchedule />
             <Statements/>
+            <TermsOfCondition/>
+            <RefundPolicy/>
+            <Footer/>
         </>
     )
 }

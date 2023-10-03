@@ -1,28 +1,15 @@
 .course-container {
-    padding:8em 5em;
-    /* background-color:#F8F8F8; */
+    padding:6em 5em;
+    color:white;
     /* background: url('./assets/coursebg.png') no-repeat center; */
-    /* background-color: #b5ebfc49; */
-    /* background: linear-gradient(to bottom, white,white,white,white,white,white,white, #c5eafb); */
+    background-color: #0C1379;
 }
 
 .course-container>h1 {
     font-size:3em;
-
+    margin-bottom:1.2em;
 }
 
 .course-container .course-description{
-    font-size:1.5em;
-}
-
-.divider{
-    font-size:100px;
-    color:red;
-  }
-
-
-/* Course Left ================================ */
-
-.cert{
-width:15em
+    font-size:1.4em;
 }

@@ -3,8 +3,8 @@ import './Nav.css'
 const Nav = (props) => {
 
     return (
-        <nav className="nav flex space-between">
-            <h1 className="nav-logo">LOGO</h1>
+        <nav className="nav flex space-between align-center">
+            <h1 className="nav-logo text-center">ACI</h1>
 
             <div className="nav-link-container flex">
                 <button className='nav-btn'>Home</button>
