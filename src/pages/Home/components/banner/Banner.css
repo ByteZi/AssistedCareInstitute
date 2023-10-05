@@ -2,33 +2,33 @@
     background-color: #B6D0E2;
     background: url('./assets/banner-bg.png') no-repeat center;
     background-size: cover;
-    height: 100vh;
-    padding: 0em 5em
+
+    
 }
+
+.banner-text-con{
+    padding:0 3vw;
+
+    flex-shrink: 1;
+    flex-grow:1;
+}
+
 
 .banner-headers > .h1-tip{
-    font-size:1.2em;
-    margin-left:1em;
+    font-size:var(--font-100);
 }
-
 
 /* BANNER TEXT */
 .banner-headers>h1 {
-    font-size: 4em;
+    font-size: var(--font-400);
     color: black;
 }
 
-.banner-headers>h3 {
-    font-size: 1.5em;
-    font-style: italic;
-    font-weight: 800;
-    color: black;
-}
-
-.banner-container-btn {
+.banner-con-btn {
     width: fit-content;
-    padding: 0.5em 1.1em;
-    border-radius: 100px;
+    margin-right:1em;
+    padding: 0.5em 0.5em;
+    border-radius: 10px;
     font-size: 1.5em;
     font-weight: 500;
     color: white;
@@ -40,37 +40,18 @@
             rgb(120, 214, 252)); */
 }
 
-.banner-img {
-    height: fit-content;
+.banner-contact-con, .banner-email-con{
+    font-size: var(--font-100);
+    margin-bottom:1em;
 }
-
-.banner-phone-con{
-    margin-left:2em;
-}
-
-.banner-phone{
-    padding:0.2em;
-}
-
-.banner-phone-con{
-    font-size:1.5em;
-}
-
-.banner-email-con{
-    font-size:1em;
-    margin-top:1.5em;
-}
-
 .banner-email-envelope{
-    font-size:2em;
+    font-size:var(--font-200);
     margin:0 0.5em;
 }
 
 .banner-email{
     font-size:1.5em;
 }
-
-
 
 /* HEADER ANIMATIONS */
 

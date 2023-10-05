@@ -1,4 +1,5 @@
 import './Nav.css'
+import { Link } from 'react-router-dom'
 
 const Nav = (props) => {
 
@@ -7,8 +8,8 @@ const Nav = (props) => {
             <h1 className="nav-logo text-center">ACI</h1>
 
             <div className="nav-link-container flex">
-                <button className='nav-btn'>Home</button>
-                <button className='nav-btn'>Course</button>
+                <Link className='nav-btn' to={'/about'}>About</Link>
+                <Link className='nav-btn' to={'/about'}>About</Link>
                 <button className='nav-btn'>About</button>
                 <button className='nav-btn contact-btn'>Contact</button>
             </div>

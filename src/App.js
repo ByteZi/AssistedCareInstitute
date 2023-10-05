@@ -3,6 +3,7 @@ import './CSS/flex.css'
 
 import Home from './pages/Home/Home';
 import Nav from './components/Nav/Nav'
+import About from './pages/About/About';
 import {
   Routes,
   Route,
@@ -15,6 +16,7 @@ function App() {
       <Nav/>
       <Routes>
         <Route element={<Home/>} path='/'/>
+        <Route element={<About/>} path='/about'/>
       </Routes>
    
     </div>

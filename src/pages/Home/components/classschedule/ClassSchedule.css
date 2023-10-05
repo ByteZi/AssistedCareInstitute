@@ -1,14 +1,10 @@
 .schedule-con {
-    padding: 5em;
+    padding: 5em 0;
     background-color: rgb(245, 245, 245);
 }
 
 .schedule-header {
-    font-size: 2.5em;
-}
 
-.schedule-header-con{
-    
 }
 
 
@@ -20,8 +16,8 @@
     background-color: rgb(41, 92, 233);
     padding: 0.5em 1em;
     color: white;
-    border-radius: 100px;
+    border-radius: 20px;
     border: none;
-    font-size: 1.8em;
+    font-size: var(--font-150);
     cursor: pointer;
 }

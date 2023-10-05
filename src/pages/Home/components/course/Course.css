@@ -1,15 +1,14 @@
 .course-container {
-    padding:6em 5em;
+    padding:2em 12vw;
     color:white;
-    /* background: url('./assets/coursebg.png') no-repeat center; */
     background-color: #0C1379;
 }
 
 .course-container>h1 {
-    font-size:3em;
-    margin-bottom:1.2em;
+
+    margin-bottom:var(--font-150);
 }
 
 .course-container .course-description{
-    font-size:1.4em;
+    font-size:var(--font-150);
 }

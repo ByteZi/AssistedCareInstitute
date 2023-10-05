@@ -1,9 +1,12 @@
 .nav {
     position: fixed;
-    padding: 1em 1em;
+    
+    top:0;
     width: 100%;
-    z-index: 100;
-    background-color: #273488;
+    height:4em;
+    padding:0 3em;
+    z-index:999;
+    background-color: #273488;    
 }
 
 .nav-logo{
@@ -12,7 +15,7 @@
 }
 
 .nav-btn {
-    padding: 0.8em 1em;
+    padding: 0.5em 1em;
     margin: 0 0.3em;
     font-size: 1em;
     color: white;

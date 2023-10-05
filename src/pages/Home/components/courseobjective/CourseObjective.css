@@ -1,29 +1,25 @@
 .objective-con {
-  padding:5em;
+  padding:5vw;
 }
 
 .objective-title-con{
   margin-bottom:1.2em;
 }
 
-
 .objective-title{
-  font-size:3em;
+
 }
 
 .objective-desc{
-  font-size:1.4em;
+  font-size:var(--font-150);
   font-weight:500;
-  width:40em;
+  width:55vw;
 }
 
-/* .objective-ul{
-  list-style:none;
-} */
 
 @media screen and (max-width:815px) {
   .objective-desc{
-    width:25em;
+    width:80vw;
   }
 }
 

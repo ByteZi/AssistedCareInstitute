@@ -1,14 +1,14 @@
 .objective-item{
     margin:1.2em 0;
-    font-size:1.5em;
+    font-size:var(--font-150);
     font-weight:400;
 }
 
 .objective-check{
     background-color: #b5ebfc;
-    font-size:1.3em;
+    font-size:var(--font-150);
     padding:0.2em;
-    border-radius:10px;
+    border-radius:0.3em;
     margin-right:20px;
 }
 

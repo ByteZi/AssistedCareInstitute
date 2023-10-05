@@ -14,7 +14,7 @@
     color:white;
  
     border-radius:500px;
-    font-size:3em;
+    font-size:var(--font-300);
     width: 4em;
     height: 4em;
   
