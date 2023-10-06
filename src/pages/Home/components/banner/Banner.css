@@ -1,57 +1,41 @@
 .banner-con {
     background-color: #B6D0E2;
-    background: url('./assets/banner-bg.png') no-repeat center;
+    background: url('./assets/banner-bg.png');
+    background-repeat: no-repeat;
     background-size: cover;
-
-    
+    background-attachment: scroll;
+    height: 100vh;
+    padding: 10%;
+    margin-top:4em;
 }
 
-.banner-text-con{
-    padding:0 3vw;
-
-    flex-shrink: 1;
-    flex-grow:1;
-}
-
-
-.banner-headers > .h1-tip{
-    font-size:var(--font-100);
-}
-
-/* BANNER TEXT */
 .banner-headers>h1 {
     font-size: var(--font-400);
-    color: black;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .banner-con-btn {
     width: fit-content;
-    margin-right:1em;
+    margin-right: 1em;
     padding: 0.5em 0.5em;
     border-radius: 10px;
-    font-size: 1.5em;
+    font-size: var(--font-150);
     font-weight: 500;
     color: white;
     cursor: pointer;
-    background-color:#4574F5;
-    /* background: linear-gradient(to right,
-            rgb(70, 156, 255),
-            rgb(47, 195, 253),
-            rgb(120, 214, 252)); */
+    background-color: #4574F5;
 }
 
-.banner-contact-con, .banner-email-con{
-    font-size: var(--font-100);
-    margin-bottom:1em;
-}
-.banner-email-envelope{
-    font-size:var(--font-200);
-    margin:0 0.5em;
+.banner-contact-con,
+.banner-email-con {
+    margin-bottom: 1em;
 }
 
-.banner-email{
-    font-size:1.5em;
+.banner-email-con,
+.banner-phone-con>* {
+    font-size: var(--font-200)
 }
+
 
 /* HEADER ANIMATIONS */
 

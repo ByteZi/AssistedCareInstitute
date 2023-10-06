@@ -3,17 +3,13 @@
 }
 
 .objective-title-con{
-  margin-bottom:1.2em;
-}
-
-.objective-title{
-
+  margin-bottom:2em
 }
 
 .objective-desc{
-  font-size:var(--font-150);
+  font-size:var(--font-200);
   font-weight:500;
-  width:55vw;
+  width:clamp(1vw, 40vw, 40vw);
 }
 
 

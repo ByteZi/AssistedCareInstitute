@@ -1,0 +1,8 @@
+.about-title{
+    font-size:var(--font-350);
+    margin-bottom:0.5em;
+}
+
+.about-title-desc{
+    width:clamp(1vw, 60vw, 1200px)
+}

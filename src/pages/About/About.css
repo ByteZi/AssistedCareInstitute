@@ -1,22 +1,8 @@
-.about-con{
-    padding:0 10%;
-    border:1px solid red;
-    font-size:1.5em;
-    
+.about-con {
+    min-height:100vh;
+    padding:5em 10vw;
 }
 
-.about-list-header{
-    font-weight: 500;
-}
-
-.about-list-con{
-    margin-left:4em;
-}
-
-.about-con > p{
-    margin:1em;
-}
-
-@media screen and (max-width:100px) {
-    
+.about-p {
+    font-size:var(--font-200)
 }

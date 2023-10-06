@@ -4,6 +4,7 @@ import './CSS/flex.css'
 import Home from './pages/Home/Home';
 import Nav from './components/Nav/Nav'
 import About from './pages/About/About';
+import Mission from './pages/Mission/Mission'
 import {
   Routes,
   Route,
@@ -11,15 +12,16 @@ import {
 
 function App() {
   return (
-    <div className="App">
+    <>
 
-      <Nav/>
+      <Nav />
       <Routes>
-        <Route element={<Home/>} path='/'/>
-        <Route element={<About/>} path='/about'/>
+        <Route element={<Home />} path='/' />
+        <Route element={<About />} path='/about' />
+        <Route element={<Mission />} path="mission" />
       </Routes>
-   
-    </div>
+    </>
+
   );
 }
 

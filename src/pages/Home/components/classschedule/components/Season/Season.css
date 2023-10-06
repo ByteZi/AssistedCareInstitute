@@ -1,10 +1,14 @@
-
 .season-con{
-    width:40em;
-    padding:3em; 
+    margin:2em;
 }
 
-.bullet-sched{
+@media screen and (max-width:370px) {
+    .season-con{
+        margin:0.6em;
+    }
+}
+
+.bullet-season{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,9 +16,9 @@
     background-color: #3f46a3;
     box-shadow: 4px 4px 0px rgb(114, 148, 241);
     color:white;
- 
+    
+    margin:1em;
     border-radius:500px;
-    font-size:var(--font-300);
     width: 4em;
     height: 4em;
   

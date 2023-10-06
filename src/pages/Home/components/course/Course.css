@@ -2,13 +2,17 @@
     padding:2em 12vw;
     color:white;
     background-color: #0C1379;
+
+    background: url('./assets/course-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.course-container>h1 {
-
-    margin-bottom:var(--font-150);
+.course-title{
+    margin-bottom:1em;
 }
 
-.course-container .course-description{
-    font-size:var(--font-150);
+.course-description{
+    font-size:var(--font-200)
 }

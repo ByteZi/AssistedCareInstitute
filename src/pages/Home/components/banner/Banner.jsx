@@ -7,9 +7,7 @@ const Banner = () => {
 
     return (
         <div className="banner-con flex align-center">
-
-            <div className="banner-text-con flex-1">
-
+            <div className="banner-text-con">
                 <div className="banner-headers">
                     <p className="h1-tip">━ QUALITY YOU CAN AFFORD</p>
                     <h1 className="banner-container-h1">ASSISTED CARE <br /> INSTITUTE</h1>
@@ -18,19 +16,17 @@ const Banner = () => {
                 <div className='banner-contact-con flex'>
                     <p className="banner-con-btn flex">Learn More</p>
                     <div className="banner-phone-con flex  align-center">
-                        <FontAwesomeIcon icon={faPhone} className="banner-phone" />
+                        <FontAwesomeIcon icon={faPhone} className="banner-phone fas" />
                         <p className="banner-phone">+650-580-6873</p>
                     </div>
 
                 </div>
                 <div className="banner-email-con flex align-center">
-                    <FontAwesomeIcon icon={faEnvelope} className="banner-email-envelope" />
+                    <FontAwesomeIcon icon={faEnvelope} className="banner-email-envelope fas" />
                     <p className="banner-email">info@assistedcareinstitute.com</p>
                 </div>
 
             </div>
-
-            {/* <div className='banner-empty flex-1 ' /> */}
         </div>
     )
 }
