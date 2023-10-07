@@ -1,15 +1,15 @@
 import './About.css'
 import Head from './components/Head/Head'
-import AboutList from './components/AboutList/AboutList'
-import Description from './components/Description/Description'
+import Experience from './components/Experience/Experience'
+import Mission from './components/Mission/Mission'
 
 const About = () => {
 
     return (
-        <div className="about-con flex just-center column">
+        <div className="about-con flex just-center align-center  column">
             <Head />
-            <AboutList />
-            <Description/>
+            <Experience />
+            <Mission/>
         </div>
     )
 }

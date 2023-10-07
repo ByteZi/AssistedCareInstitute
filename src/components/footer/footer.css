@@ -1,6 +1,9 @@
+
 .footer-con {
+    margin-top:auto;
     background-color: rgb(51, 51, 51);
-    padding:1em 1vw;
+    padding:1em 3vw;
+    width:100%;
 }
 
 .footer-divider{

@@ -1,8 +1,25 @@
 .about-con {
-    min-height:100vh;
-    padding:5em 10vw;
+    min-height: 100vh;
+    padding: 5% 0vw;
 }
 
 .about-p {
-    font-size:var(--font-200)
+    font-size: var(--font-200)
+}
+
+/* Exp & Mission CSS */
+
+.about-exp-con,
+.about-mission-con {
+    padding: 2em clamp(5vw, 10vw ,40vw);
+    text-align: justify;
+    width:100%;
+
+}
+
+.about-exp-title,
+.about-mission-title {
+    font-size: var(--font-300);
+    font-weight: 600;
+    margin-bottom: 0.5em;
 }

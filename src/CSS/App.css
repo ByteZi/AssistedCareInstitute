@@ -1,17 +1,34 @@
 :root {
-  --font-100: clamp(1rem, 1.1vw, 1.8rem);
-  --font-150: clamp(1rem, 1.5vw, 1.8rem);
-  --font-200: clamp(1rem, 1.3vw, 3rem);
-  --font-230: clamp(1.5rem, 1.3vw, 2.5rem);
   --font-250: clamp(1rem, 2.5vw, 3.5rem);
-  --font-300: clamp(2rem, 4vw, 2.5rem);
+
   --font-350: clamp(1.5rem, 3vw, 3rem);
-  --font-400: clamp(2rem, 7vw, 6rem);
 
-  --font-50: 0.5rem;
+  /* h1 tip */
+  --font-80: clamp(0.7rem, 1.5vw, 1.5rem);
 
-  --font-500: 5rem;
+  /*  sched days*/
+  --font-100: clamp(1rem, 0.9vw, 1.5rem);
 
+  /* schedule */
+  --font-130: clamp(1.5em, 1.8vw, 1.4em);
+
+  /* banner btns/contact */
+  --font-150: clamp(0.9em, 1.8vw, 1.7em);
+
+  /* course desc - descriptions */
+  --font-170: clamp(1em, 1.7vw, 1.3em);
+
+  /* larger description heavier weight --- objective items*/
+  --font-200: clamp(1.1rem, 1.4vw, 1.8rem);
+
+  /* sched month */
+  --font-230: clamp(1.5em, 1.5vw, 1.8rem);
+
+  /* h2 tip - * */
+  --font-300: clamp(1.8rem, 4vw, 3rem);
+
+  /* banner header */
+  --font-400: clamp(1.8rem, 7vw, 6rem);
 }
 
 .h1-tip {
@@ -19,16 +36,25 @@
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 1em;
-  letter-spacing: 0.5vw;
-  font-size: var(--font-100);
+  letter-spacing: clamp(0.1rem, 0.5vw, 0.7rem);
+  font-size: var(--font-80);
+}
+
+h1 {
+  font-weight: 500;
 }
 
 h2 {
+  font-weight: 700;
   font-size: var(--font-300);
 }
 
+h3 {
+  font-size: var(--font-170)
+}
+
 .h1-ast {
-  font-size: var(--font-250);
+  font-size: var(--font-300);
   margin-right: 0.5em;
 
   color: #4574F5
@@ -45,8 +71,6 @@ h2 {
   margin: 0 0.5em
 }
 
-a{
+a {
   text-decoration: none;
 }
-
-

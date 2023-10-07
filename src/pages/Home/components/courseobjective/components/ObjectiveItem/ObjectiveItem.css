@@ -1,12 +1,12 @@
 .objective-item{
     margin:1.2em 0;
-    font-size:var(--font-200);
+    font-size:var(--font-170);
     font-weight:400;
 }
 
 .objective-check{
     background-color: #b5ebfc;
-    font-size:var(--font-150);
+    font-size:var(--font-170);
     padding:0.2em;
     border-radius:0.3em;
     margin-right:20px;
