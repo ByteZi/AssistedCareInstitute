@@ -1,10 +1,9 @@
 .nav {
     position: fixed;
-
     top:0;
     width: 100%;
     height:4em;
-    padding:0 3em;
+    padding:0 2.1em;
     z-index:999;
     background-color: #273488;    
 }
@@ -21,7 +20,7 @@
         display:none
     }
 }
-@media screen and (min-width:736px) {
+@media screen and (min-width:737px) {
     .nav-mobile-con{
         display:none;
     }

@@ -7,11 +7,11 @@ const AboutList = () => {
                 Her professional background includes the roles :
             </h3>
 
-            <ul className="about-ul flex column">
-                <li>inpatient nurse</li>
-                <li>advice nurse</li>
-                <li>nurse leader</li>
-                <li>nurse educator</li>
+            <ul className="about-ul flex column just-center">
+                <li>Inpatient nurse</li>
+                <li>Advice nurse</li>
+                <li>Nurse lead</li>
+                <li>Nurse educator</li>
             </ul>
         </div>
     )

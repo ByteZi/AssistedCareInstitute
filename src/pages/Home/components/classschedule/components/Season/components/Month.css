@@ -7,8 +7,10 @@
     color:#4574F5;
     font-size:var(--font-230);
     margin:0.3em 0.5em 0.3em 0.5em;
+    
 }
 
 .month-days{
-    font-size:var(--font-150);
+    font-size:var(--font-100);
+
 }

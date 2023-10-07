@@ -1,15 +1,5 @@
 .about-list-con {
     margin: 1.5em 0;
-
-}
-
-.about-ul {
-    margin-left: 2em;
-}
-
-.about-ul>li {
-
-    font-size: var(--font-200)
 }
 
 .about-list-header {
@@ -17,3 +7,27 @@
     margin-bottom: 0.5em;
     font-size: var(--font-200)
 }
+
+.about-ul {
+    list-style: none;;
+    border-left:7px solid #4574F5;
+    height:200px;
+    margin:1.5em 0;
+}
+
+.about-ul>li {
+    position:relative;
+    left:-25px;
+    font-size: var(--font-200);
+    padding:0.8em;
+    width:clamp(200px, 10px, 300px);
+    background-color: #4574F5;
+    border-radius:20px;
+    margin:0.5em 0;
+    color:white;
+}
+
+.about-ul:first-child{
+    border:5px solid green;
+}
+

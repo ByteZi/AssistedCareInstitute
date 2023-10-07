@@ -6,7 +6,7 @@ import Description from './components/Description/Description'
 const About = () => {
 
     return (
-        <div className="about-con flex just-center align-center column">
+        <div className="about-con flex just-center column">
             <Head />
             <AboutList />
             <Description/>
