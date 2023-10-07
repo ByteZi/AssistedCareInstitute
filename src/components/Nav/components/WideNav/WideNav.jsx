@@ -6,8 +6,7 @@ const WideNav = () => {
         <div className="nav-link-con flex">
             <Link className='nav-btn' to={'/'}>Home</Link>
             <Link className='nav-btn' to={'/about'}>About</Link>
-            <Link className='nav-btn' to={'/mission'}>Mission</Link>
-            
+            <Link className="nav-btn enroll-btn" to={'/enrollment'}>Enroll</Link>
         </div>
     )
 }

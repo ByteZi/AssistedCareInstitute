@@ -1,6 +1,6 @@
 .nav-btn {
-    padding: 0.5em 1em;
-    margin: 0 0.3em;
+    padding: 0.5em 0.8em;
+    margin-left:1em;
 
     color: white;
     font-weight: 600;
@@ -10,6 +10,7 @@
     border: none;
     background: none;
     font-size: 1.2em;
+ 
 }
 
 .nav-btn:hover {
@@ -17,12 +18,13 @@
 }
 
 
-.contact-btn {
+.enroll-btn {
     background-color: #4574F5;
-    border-radius: 10px;
-
+    border-radius: 20px;
+    
 }
 
-.contact-btn:hover {
+.enroll-btn:hover {
     color: white;
+    background-color: #5a81ec;
 }

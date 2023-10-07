@@ -1,16 +1,17 @@
 import './CSS/App.css'
 import './CSS/flex.css'
 import Home from './pages/Home/Home';
-import Nav from './components/Nav/Nav'
 import About from './pages/About/About';
-
-import Footer from './components/Nav/components/footer/footer';
-import ScrollToTop from './components/Nav/components/ScrollTooTop/ScrollToTop';
+import Footer from './components/Footer/Footer'
+import Nav from './components/Nav/Nav'
+import Enrollment from './pages/Enrollment/Enrollment';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import {
   Routes,
   Route,
 
 } from "react-router-dom";
+
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route element={<Home />} path='/' />
         <Route element={<About />} path='/about' />
+        <Route element={<Enrollment />} path='/enrollment' />
       </Routes>
       <ScrollToTop/>
       <Footer />
