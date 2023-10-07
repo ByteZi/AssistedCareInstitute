@@ -1,7 +1,6 @@
 import './Nav.css'
-import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import MobileNav from './components/MobileNav/MobileNav'
+import WideNav from './components/WideNav/WideNav'
 
 const Nav = (props) => {
 
@@ -14,8 +13,8 @@ const Nav = (props) => {
         <nav className="nav flex space-between align-center">
             <h1 className="nav-logo text-center">ACI</h1>
 
-            
-
+            <WideNav/>
+            <MobileNav/>
             
         </nav>
     )

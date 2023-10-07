@@ -1,0 +1,39 @@
+.nav-mobile{
+    position:fixed;
+    height:100%;
+    top:64px;
+    
+    color:black;
+    background-color: #182888;
+}
+
+.nav-mobile-btn{
+    cursor:pointer;
+    text-align: center;
+    padding:1.3em 2em;
+    color:white;
+    text-decoration: none;
+    box-shadow:inset 0px -5px 3px #0f1f78;
+}
+
+
+.nav-mobile-btn:hover{
+    background-color: #263696;
+}
+
+
+/* Active Menu */
+.nm-active{
+    right:0px;
+    transition: 0.5s;
+}
+
+.nm-deactive{
+    right:-200px;
+    transition: 0.5s;
+}
+
+.s-active{
+    transform: rotate(90deg);
+    background-color: black;
+}

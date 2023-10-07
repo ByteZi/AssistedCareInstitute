@@ -14,43 +14,15 @@
     font-size:2.5em
 }
 
-.nav-btn {
-    padding: 0.5em 1em;
-    margin: 0 0.3em;
 
-    color: white;
-    font-weight: 600;
 
-    outline: none;
-    cursor: pointer;
-    border: none;
-    background: none;
-    font-size: 1.2em;
+@media screen and (max-width:736px) {
+    .nav-link-con{
+        display:none
+    }
 }
-
-.nav-btn:hover {
-    color: rgb(49, 152, 221);
-}
-
-
-.contact-btn {
-    background-color: #4574F5;
-    border-radius: 10px;
-}
-
-.contact-btn:hover {
-    color: white;
-}
-
-
-.sandwhich{
-    font-size:1.5em;
-    color:white;
-    cursor:pointer;
-    padding:0.5em;
-    border-radius:10px
-}
-
-.sandwhich:hover{
-    background-color: rgba(185, 185, 185, 0.562);
+@media screen and (min-width:736px) {
+    .nav-mobile-con{
+        display:none;
+    }
 }
