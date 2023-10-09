@@ -13,7 +13,7 @@ const InterestForm = ({ interestFormRef }) => {
 
     const SubmitMessage = (e) => {
         e.preventDefault();
-        formVisible.current.style.display = "none"
+
         const errArr = []
 
         for (let i = 0; i != 3; i++) {
@@ -29,6 +29,7 @@ const InterestForm = ({ interestFormRef }) => {
         if (!errors) return console.log(errors)
         emailjs.sendForm('service_2x4cxck', 'template_wg2ulnt', form.current, '3tiNk_K-47LEZ4niD')
             .then((data) => {
+                formVisible.current.style.display = "none"
                 setLoading(true)
                 console.log(data.status)
                 setLoading(false)

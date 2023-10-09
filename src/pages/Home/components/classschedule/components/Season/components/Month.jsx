@@ -7,6 +7,7 @@ const Month = ({month, days, k}) => {
             <div className="month-con-details flex column">
                 <h3>Weekends</h3>
                 <p className="month-days">{days[k]}</p>
+                {console.log(days[k])}
             </div>
         </div>
     )
