@@ -1,9 +1,9 @@
 :root{
-    --img-owner-sz:clamp(15rem,15vw, 20rem)
+    --img-owner-sz:clamp(15rem,18vw, 20rem)
 }
 
 .about-head-con{
-    padding-top:5em;
+    padding:8em 0 5em 0 ; 
 }
 
 .about-text-con{
@@ -43,10 +43,15 @@
     transform:rotate(5deg)
 }
 
-@media screen and (max-width:990px) {
+@media screen and (max-width:1024px) {
     .about-head-con{
         flex-direction: column;
     }
+    .about-head-con{
+        padding:0;
+        margin-top:5em
+    }
+    
     .about-img-con{
         margin-left:0
     }

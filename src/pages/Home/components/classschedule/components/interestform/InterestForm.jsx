@@ -1,6 +1,6 @@
 import './InterestForm.css'
 import { useState } from 'react'
-
+import emailjs from '@emailjs/browser';
 
 const InterestForm = ({interestFormRef}) => {
 

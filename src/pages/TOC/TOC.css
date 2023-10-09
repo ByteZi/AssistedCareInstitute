@@ -1,0 +1,14 @@
+.toc-con {
+    padding: 5em;
+}
+
+.footer-con{
+    display:none;
+}
+
+.toc-ol{
+    counter-set:toc-inc;
+    list-style: none;
+}
+
+

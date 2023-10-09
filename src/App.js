@@ -2,10 +2,11 @@ import './CSS/App.css'
 import './CSS/flex.css'
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
-import Footer from './components/Footer/Footer'
+import Footer from './components/footer/Footer'
 import Nav from './components/Nav/Nav'
 import Enrollment from './pages/Enrollment/Enrollment';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
+import TOC from './pages/TOC/TOC'
 import {
   Routes,
   Route,
@@ -23,9 +24,11 @@ function App() {
         <Route element={<Home />} path='/' />
         <Route element={<About />} path='/about' />
         <Route element={<Enrollment />} path='/enrollment' />
+        <Route element={<TOC/>} path='/ToC' />
       </Routes>
-      <ScrollToTop/>
       <Footer />
+
+      <ScrollToTop/>
     </>
 
   );

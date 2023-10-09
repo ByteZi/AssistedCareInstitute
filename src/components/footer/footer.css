@@ -4,6 +4,7 @@
     background-color: rgb(51, 51, 51);
     padding:1em 3vw;
     width:100%;
+    font-size:0.8em;
 }
 
 .footer-divider{
@@ -19,8 +20,18 @@
     color:white;
 }
 
+.footer-link-top , .footer-licensing>a{
+    border-bottom:0.5px solid white;
+    padding-bottom:3px;
+    width:fit-content;
+    color:white;
+}
+
+.footer-link-divider{
+    padding:0 1em;
+}
+
 .footer-licensing > a {
-    text-decoration: none;
     color:white;
     margin-left:1em;
     margin-top:0.5em;

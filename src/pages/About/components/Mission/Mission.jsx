@@ -2,7 +2,7 @@ import "./Mission.css"
 
 const Mission = () => {
     return (
-        <div className="about-mission-con">
+        <div className="about-mission-con flex column">
             <h3 className="about-mission-title">Our Mission</h3>
             <p className="about-p">
                 The <span className="about-mission-highlight">Assisted Care Institute</span> is committed to inspiring students to become compassionate leaders in community care.  Our company’s
