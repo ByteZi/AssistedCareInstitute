@@ -32,7 +32,6 @@ const MobileNav = () => {
             <div className='nav-mobile flex column nm-deactive' ref={navMobileRef}>
                 <Link onClick={(e)=>MobileNavToggle(e, '/') } className='nav-mobile-btn' to={'/'}>Home</Link>
                 <Link onClick={(e)=>MobileNavToggle(e, '/about') } className='nav-mobile-btn' to={'about'}>About</Link>
-                <Link onClick={(e)=>MobileNavToggle(e, '/mission') } className='nav-mobile-btn' to={'/mission'}>Mission</Link>
             </div>
         </div>
     )

@@ -2,7 +2,7 @@ import './Head.css'
 
 const Head = () => {
     return (
-        <div className="about-head-con flex align-center just-center ">
+        <div className="about-head-con flex align-center  ">
             <div className="about-img-con flex just-center ">
                 <img src={require('./assets/owner/owner.jpg')} className="owner-img" alt="owner"/>
             </div>

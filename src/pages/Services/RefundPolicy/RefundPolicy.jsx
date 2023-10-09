@@ -1,15 +1,13 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAsterisk } from '@fortawesome/free-solid-svg-icons'
 import './RefundPolicy.css'
+import '../Services.css'
 
 const RefundPolicy = () => {
 
     return (
-        <div className="toc-refund-con flex column align-center text-center ">
-            <div className="toc-header-con flex flex-1">
-                <FontAwesomeIcon icon={faAsterisk} className="h1-ast" />
-                <h1 className="toc-refund">Refund Policy</h1>
-            </div>
+        <div className="toc-refund-con services-pads flex column ">
+
+            <h1 className="toc-refund">Refund Policy</h1>
+
             <p>While all sales are final, registration fees can be credited towards a future
                 course. ACI has a 72-hour advanced-notice cancellation policy. The
                 student needs to attend ALL 10 day sessions in order to successfully

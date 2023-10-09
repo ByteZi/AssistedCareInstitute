@@ -1,0 +1,47 @@
+.enrollment-con {
+    padding: 5em 1em;
+}
+
+.enrollment-card {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.308);
+    width: fit-content;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 6px solid white;
+}
+
+.enrollment-card-price-con {
+    background: linear-gradient(to bottom left, #678ef8, rgb(85, 175, 248), #4574F5);
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 15em;
+    border-radius: 100% 0% 100% 0% / 0% 50% 50% 100%;
+    box-shadow: 0 0 20px #457df534;
+}
+
+
+.enrollment-card-price-header {
+    font-size: var(--font-price)
+}
+
+.enrollment-card-price-txt {
+    font-size:0.9em;
+    font-weight: 500;
+}
+
+.enrollment-card-price-header:before {
+    content: "$";
+    position: relative;
+    top: 10px;
+    font-size: calc(var(--font-100) + 0.8vw);
+}
+
+.enrollment-card-content {
+    padding: 1.5em;
+}
+
+.enrollment-card-div {
+    margin-top: -1em;
+    border-bottom: 1px solid rgba(230, 204, 204, 0.295);
+}

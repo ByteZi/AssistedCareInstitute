@@ -2,14 +2,18 @@
 .footer-con {
     margin-top:auto;
     background-color: rgb(51, 51, 51);
-    padding:1em 3vw;
-    width:100%;
+    padding:0em 1vw;
     font-size:0.8em;
+    height:fit-content;
 }
 
 .footer-divider{
     border-bottom:0.5px solid white;
-    margin-top:1em;
+    margin-top:1.5em;
+}
+
+.footer-top{
+    padding-top:1em;
 }
 
 .footer-rows{
@@ -25,16 +29,25 @@
     padding-bottom:3px;
     width:fit-content;
     color:white;
+    font-size:var(--font-footer-link)
 }
+
 
 .footer-link-divider{
     padding:0 1em;
 }
 
-.footer-licensing > a {
-    color:white;
-    margin-left:1em;
-    margin-top:0.5em;
 
-    font-size:var(--font-100)
-} 
+
+.row-txt{
+    font-size:1em;
+    opacity: 80%;
+}
+
+.row-txt:hover{
+    opacity: 100%;
+}
+
+.in{
+    display: inline-block;
+}

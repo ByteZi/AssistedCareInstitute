@@ -1,10 +1,7 @@
-.toc-con {
-    padding: 5em;
+.services-pads {
+    padding:5em clamp(1em , 2vw, 20vw);
 }
 
-.footer-con{
-    display:none;
-}
 
 .toc-ol{
     counter-set:toc-inc;

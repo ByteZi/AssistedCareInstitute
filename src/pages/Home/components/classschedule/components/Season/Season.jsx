@@ -13,7 +13,7 @@ const Season = ({ season, months, days }) => {
                         <Month
                             month={i}
                             days={days}
-                            k={k}
+                            key={k}
                             />)
                 }
             </div>

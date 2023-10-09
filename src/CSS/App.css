@@ -1,7 +1,7 @@
 :root {
   --font-250: clamp(1rem, 2.5vw, 3.5rem);
 
-  --font-350: clamp(1.5rem, 3vw, 3rem);
+  --font-350: clamp(1.5rem, 5vw, 4rem);
 
   /* h1 tip */
   --font-80: clamp(0.7rem, 1.5vw, 1.5rem);
@@ -28,7 +28,17 @@
   --font-300: clamp(1.8rem, 4vw, 3rem);
 
   /* banner header */
-  --font-400: clamp(1.8rem, 7vw, 6rem);
+  /* --font-400: clamp(1.8rem, 7vw, 6rem); */
+  --font-400: clamp(1.8rem, 4vw, 6rem);
+
+  /* font price  */
+  --font-price: clamp(4em, 3.5vw, 5em);
+
+  /* font price txt
+  --font-price-txt: clamp(0.5em,vw, 2m) */
+
+  /* font-footer-link */
+  --font-footer-link: clamp(0.9em, 0.8vw, 1.5em)
 }
 
 .h1-tip {
@@ -74,3 +84,8 @@ h3 {
 a {
   text-decoration: none;
 }
+
+.div-fill{
+  height:95vh;
+}
+

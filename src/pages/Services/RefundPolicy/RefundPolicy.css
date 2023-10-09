@@ -1,0 +1,4 @@
+.services-pads {
+    padding:5em clamp(1em , 2vw, 20vw);
+}
+
