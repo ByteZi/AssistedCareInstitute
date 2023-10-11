@@ -13,6 +13,7 @@ import {
   Route,
 
 } from "react-router-dom";
+import NotFound from './pages/NotFound/NotFound';
 
 
 
@@ -22,6 +23,7 @@ function App() {
 
       <Nav />
       <Routes>
+        <Route element={<NotFound/>} path="/*"/>
         <Route element={<Home />} path='/' />
         <Route element={<About />} path='/about' />
         <Route element={<Reservation/>} path='/reservation' />

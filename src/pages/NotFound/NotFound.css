@@ -1,0 +1,45 @@
+.not-found-con {
+    height: 100vh;
+    margin:0.5em
+}
+
+.not-found-content-con{
+    background-color: rgba(75, 75, 75, 0.116);
+    padding:1em;
+    border-radius:20px;
+
+}
+
+.not-found-err{
+    text-shadow: 2px 2px 1px #4574F5;
+    color:rgb(255, 255, 255);
+}
+
+.not-found-err-p{
+    font-weight:500;
+}
+
+.not-found-err-p{
+    margin-top:1em;
+    width:70%
+}
+
+.not-found-icon {
+    font-size:clamp(3em, 5vw, 4em);
+    background-color: #4574F5;
+    width:1.5em;
+    height:1.5em;
+    padding:0.5em;
+    border-radius: 100px;
+    color:white;
+}
+
+
+
+.not-found-header {
+    background-color: #4574F5;
+    padding:0.4em;
+    color:white;
+    font-size:clamp(1.2em, 2vw, 4em);
+    border-radius: 10px;
+}

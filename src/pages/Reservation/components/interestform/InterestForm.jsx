@@ -1,3 +1,4 @@
+
 import './InterestForm.css'
 import './css/conditional.css'
 import { useState } from 'react';
@@ -14,33 +15,30 @@ const InterestForm = () => {
     const [success, setSuccess] = useState(false)
     const [loading, setLoading] = useState(false)
 
-    const SubmitMessage = (e) => {
-        e.preventDefault()
+    const SubmitMessage = async (e) => {
+        e.preventDefault();
         const errArr = {}
         for (let i = 0; i !== 3; i++) {
-            const form_name = form.current[i].name
-            const form_value = form.current[i].value
-            const validateErr = new Validator(form_name, form_value).validateStart()
-            if (validateErr) errArr[form_name] = validateErr
+            const validateErr = new Validator(form.current[i].name, form.current[i].value).validateStart()
+            if (validateErr) errArr[form.current[i].name] = validateErr
         }
-        setErrors(errArr)
-
-
-
-        if (Object.keys(errors).length > 0) console.error("Something went wrong with the input values", errors)
-        else {
-            // emailjs.sendForm('service_2x4cxck', 'template_wg2ulnt', form.current, '3tiNk_K-47LEZ4niD')
-            //     .then((data) => {
-            //         setLoading(true)
-            //         console.log(data.status)
-            //         setLoading(false)
-            //         setSuccess(true)
-            //     }, (error) => {
-            //         console.log(error);
-            //     });
-            // setErrors({})
-            console.log('success no errors', errors)
+        const errorLength = Object.keys(errArr).length;
+        try {
+            if (errorLength > 0) throw errArr
+            setLoading(true)
+            emailjs.sendForm('service_2x4cxck', 'template_wg2ulnt', form.current, '3tiNk_K-47LEZ4niD')
+                .then((data) => {
+                    console.log(data.status)
+                    setLoading(false)
+                    setSuccess(true)
+                }, (error) => {
+                    console.log(error.text);
+                });
+        } catch (e) {
+            setErrors(errArr)
+            console.log(errors)
         }
+
 
     };
 
@@ -55,10 +53,10 @@ const InterestForm = () => {
                         <p className="success-txt">We'll contact you soon.</p>
                     </div>
                     :
-                    < form ref={form} onSubmit={(e) => SubmitMessage(e)} className='interestform-module flex column' >
+                    < form ref={form} className='interestform-module flex column' >
                         {
                             loading
-                                ? <div className="interestform-load" />
+                                ? <div className="interestform-loading" />
                                 :
                                 <>
                                     <h1 className="interestform-header">Reserve</h1>
@@ -75,7 +73,7 @@ const InterestForm = () => {
                                         />
                                         {errors['phone'] && <p className="err-item">{errors['phone']}</p>}
                                         <textarea className="interestform-textarea" type='text' placeholder='Message' name="message" />
-                                        <button type="submit" className=' form-btn' >Submit</button>
+                                        <button onClick={(e) => SubmitMessage(e)} className=' form-btn' >Submit</button>
                                     </div>
                                 </>
                         }
