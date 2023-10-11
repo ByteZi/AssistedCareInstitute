@@ -7,7 +7,7 @@
 }
 
 .banner-header-con {
-    padding: 0 10%;
+    padding:0 10%;
 }
 
 .banner-headers>h1 {
@@ -44,10 +44,10 @@
 
 
 .banner-logo{
-    width:60%;
+    width:70%;
 }
 
-@media screen and (max-width:610px) {
+@media screen and (max-width:1024px) {
     .banner-con{
         margin-top:4em;
         flex-direction: column-reverse;

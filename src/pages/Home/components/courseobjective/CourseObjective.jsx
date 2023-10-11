@@ -12,7 +12,7 @@ const CourseObjective = () => {
 
             <div className="objective-title-con flex align-center">
                 <FontAwesomeIcon icon={faAsterisk} className="h1-ast" />
-                <h2 className="objective-title ">Course Objective</h2>
+                <h2 className="objective-title ">Course Objectives</h2>
             </div>
 
             <h3 className='objective-desc text-center'>Upon completion of the RCFE ICTP course, the student will

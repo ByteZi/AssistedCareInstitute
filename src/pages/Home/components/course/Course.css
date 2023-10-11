@@ -2,7 +2,7 @@
     padding:2em 12vw;
     color:white;
     background-color: #0C1379;
-
+    scroll-margin-top:2.5em;
     background: url('./assets/course-bg.png');
     background-repeat: no-repeat;
     background-position: center;

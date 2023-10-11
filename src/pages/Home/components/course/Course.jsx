@@ -4,7 +4,7 @@ import './Course.css'
 const Course = () => {
 
     return (
-        <div className="course-container section flex column align-center text-center ">
+        <div id="course" className="course-container section flex column align-center text-center ">
             < h2 className='course-title'> RCFE ICTP Certification</h2 >        
             <p className="course-description">The RCFE Initial Certification Training Program (ICTP) is an 80-hour live
                 stream course that prepares the student for the state administrator

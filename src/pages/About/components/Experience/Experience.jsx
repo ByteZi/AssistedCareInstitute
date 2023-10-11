@@ -10,15 +10,15 @@ const Experience = () => {
                 in <span className="about-degree">Bachelor of Science in Computer Science</span>,
                 a <span className="about-degree">Bachelor of Science in Nursing</span>, and a <span className="about-degree">Master’s
                 Degree in Nursing</span> with a focus in Leadership
-                and Management, and completion of a course in
+                and Management, and <span className="about-degree">completion of a course in
                 Leadership Principles at Harvard Business
-                School.  Her professional portfolio includes
+                School.</span> Her professional portfolio includes
                 15 years of extensive work experience in the
                 nursing profession in one of the leading
                 healthcare organizations in the nation.
                 Her roles include that of an inpatient nurse,
                 an advice nurse, a nurse manager, and an RN
-                educator.   Theresa strongly believes there
+                educator. Theresa strongly believes there
                 are no secrets to success.  Rather, success
                 is the result of hard work, determination,
                 persistence, and perseverance.

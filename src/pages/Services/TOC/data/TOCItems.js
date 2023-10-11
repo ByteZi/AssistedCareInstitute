@@ -1,4 +1,4 @@
-export default [
+const TOCListItem = [
     {
         "header": 'Punctuality',
         'txt': `Students must be punctual. Classes start on time. If students are
@@ -38,3 +38,5 @@ export default [
 
 
 ]
+
+export default TOCListItem

@@ -1,13 +1,13 @@
-.enrollment-con {
-    padding: 5em 1em;
-}
+
 
 .enrollment-card {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.308);
     width: fit-content;
     border-radius: 20px;
+
     overflow: hidden;
     border: 6px solid white;
+    background-color: white;
 }
 
 .enrollment-card-price-con {

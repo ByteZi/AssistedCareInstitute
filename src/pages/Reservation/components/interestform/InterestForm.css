@@ -1,0 +1,78 @@
+.interestform-module {
+    background-color: white;
+    border:5px solid white;
+    overflow: hidden;
+    width:fit-content;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.308);
+    width:25em;
+}
+
+.interestform-header {
+    font-size: var(--font-300);
+    color:white;
+    padding:0.5em;
+    text-align: center;
+    background: linear-gradient(to bottom left, #678ef8, rgb(85, 175, 248), #4574F5);
+}
+
+.interestform-input-con{
+    padding:1em;
+}
+
+.interestform-input,
+textarea {
+    font-size:var(--font-100);
+    padding: 0.5em 1em;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.541);
+    resize: none;
+    margin-top: 2em;
+    width:100%;
+}
+
+
+.interestform-input:focus,
+textarea:focus {
+    outline: none;
+}
+
+.interestform-input{
+    font-weight: 500;
+}
+
+textarea {
+    height:5em;
+    border:none;
+    background-color: rgba(128, 128, 128, 0.103);
+    border-radius: 5px;
+}
+
+.form-btn {
+    padding: 0.5em 1em;
+    width:100%;
+    font-size: 1.3em;
+    border: none;
+
+    background-color: #4574F5;
+    cursor: pointer;
+    color: white;
+    
+}
+
+.form-btn:hover {
+    background-color: #5b84f5;
+}
+
+
+.interestform-input[type=number]::-webkit-inner-spin-button, 
+.interestform-input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+ 
+}
+
+@media screen and (max-width:520px) {
+    .interestform-module{
+        width:90%;
+    }
+}

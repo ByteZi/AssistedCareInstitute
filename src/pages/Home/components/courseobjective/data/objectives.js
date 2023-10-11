@@ -1,4 +1,4 @@
-export default [
+const Objectives = [
     'Regulatory requirements to successfully operate an RCFE',
     'Special considerations on the provision of dementia and hospice care',
     'Medication management',
@@ -9,3 +9,5 @@ export default [
     'Staffing requirements to adequate supervision of residents',
     'Cultural competency and sensitivity to aging LGBTQ community',
 ]
+
+export default Objectives

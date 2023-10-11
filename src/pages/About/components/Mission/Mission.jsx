@@ -7,7 +7,7 @@ const Mission = () => {
             <p className="about-p">
                 The <span className="about-mission-highlight">Assisted Care Institute</span> is committed to inspiring students to become compassionate leaders in community care.  Our company’s
                     mission is to provide quality training experience to aspiring <span className="about-mission-highlight">RCFE administrators</span> by giving them the tools they need to prepare
-                    for the state certification exam.  We believe that providing quality training is key to producing competent RCFE administrators \
+                    for the state certification exam.  We believe that providing quality training is key to producing competent RCFE administrators
                     to serve the most vulnerable population, the frail and the elderly.
             </p>
         </div>
