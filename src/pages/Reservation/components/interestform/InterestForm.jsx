@@ -15,7 +15,7 @@ const InterestForm = () => {
     const [loading, setLoading] = useState(false)
 
     const SubmitMessage = (e) => {
-        e.preventDefault();
+        e.preventDefault()
         const errArr = {}
         for (let i = 0; i !== 3; i++) {
             const form_name = form.current[i].name
@@ -24,19 +24,22 @@ const InterestForm = () => {
             if (validateErr) errArr[form_name] = validateErr
         }
         setErrors(errArr)
-        console.log(errors)
-        if (Object.keys(errors).length === 0) console.error("Something went wrong with the input values")
+
+
+
+        if (Object.keys(errors).length > 0) console.error("Something went wrong with the input values", errors)
         else {
-            emailjs.sendForm('service_2x4cxck', 'template_wg2ulnt', form.current, '3tiNk_K-47LEZ4niD')
-                .then((data) => {
-                    setLoading(true)
-                    console.log(data.status)
-                    setLoading(false)
-                    setSuccess(true)
-                }, (error) => {
-                    console.log(error.text);
-                });
-            setErrors({})
+            // emailjs.sendForm('service_2x4cxck', 'template_wg2ulnt', form.current, '3tiNk_K-47LEZ4niD')
+            //     .then((data) => {
+            //         setLoading(true)
+            //         console.log(data.status)
+            //         setLoading(false)
+            //         setSuccess(true)
+            //     }, (error) => {
+            //         console.log(error);
+            //     });
+            // setErrors({})
+            console.log('success no errors', errors)
         }
 
     };
@@ -52,7 +55,7 @@ const InterestForm = () => {
                         <p className="success-txt">We'll contact you soon.</p>
                     </div>
                     :
-                    < form ref={form} className='interestform-module flex column' >
+                    < form ref={form} onSubmit={(e) => SubmitMessage(e)} className='interestform-module flex column' >
                         {
                             loading
                                 ? <div className="interestform-load" />
@@ -72,7 +75,7 @@ const InterestForm = () => {
                                         />
                                         {errors['phone'] && <p className="err-item">{errors['phone']}</p>}
                                         <textarea className="interestform-textarea" type='text' placeholder='Message' name="message" />
-                                        <button onClick={(e) => SubmitMessage(e)} className=' form-btn' >Submit</button>
+                                        <button type="submit" className=' form-btn' >Submit</button>
                                     </div>
                                 </>
                         }

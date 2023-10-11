@@ -15,7 +15,7 @@ const CourseObjective = () => {
                 <h2 className="objective-title ">Course Objectives</h2>
             </div>
 
-            <h3 className='objective-desc text-center'>Upon completion of the RCFE ICTP course, the student will
+            <h3 className='objective-desc text-center'>Upon completion of the RCFE ICTP course, the participants will
                 gain knowledge and understanding in the following areas</h3>
             <ul className="objective-ul">
                 {
