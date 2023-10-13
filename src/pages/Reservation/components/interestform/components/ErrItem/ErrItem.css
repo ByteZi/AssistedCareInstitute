@@ -1,0 +1,12 @@
+.err-item {
+    color: rgb(250, 250, 250);
+    font-weight: 500;
+    letter-spacing: 2px;
+    background-color: rgb(199, 106, 106);
+    padding: 0.5em;
+    font-size: 0.9em;
+    border-radius: 5px;
+    margin-top: 8px;
+    text-align: center;
+    border-top: 5px solid rgb(245, 47, 47);
+}

@@ -17,7 +17,7 @@
 }
 
 .interestform-input-con {
-    padding: 0.5em;
+    padding: 1em;
 }
 
 .interestform-input,
@@ -31,15 +31,9 @@ textarea,
     width: 100%;
 }
 
-.interestform-input,
-textarea {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.541);
-}
 
-.interestform-input:focus,
-textarea:focus {
-    outline: none;
-}
+
+
 
 .interestform-meridiem-div{
     font-weight:500;
@@ -52,28 +46,9 @@ textarea {
     border-radius: 5px;
 }
 
-.form-btn {
-    padding: 0.5em 1em;
-    width: 100%;
-    font-size: 1.3em;
-    border: none;
-
-    background-color: #4574F5;
-    cursor: pointer;
-    color: white;
-
-}
-
-.form-btn:hover {
-    background-color: #5b84f5;
-}
 
 
-.interestform-input[type=number]::-webkit-inner-spin-button,
-.interestform-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
 
-}
 
 @media screen and (max-width:520px) {
     .interestform-module {

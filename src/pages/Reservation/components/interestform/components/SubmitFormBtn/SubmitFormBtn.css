@@ -1,0 +1,14 @@
+.form-btn {
+    padding: 0.5em 1em;
+    width: 100%;
+    font-size: 1.3em;
+    border: none;
+
+    background-color: #4574F5;
+    cursor: pointer;
+    color: white;
+}
+
+.form-btn:hover {
+    background-color: #5b84f5;
+}

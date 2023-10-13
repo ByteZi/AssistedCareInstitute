@@ -1,0 +1,20 @@
+.interestform-success {
+    color: #4574F5;
+    background-color: white;
+    box-shadow: 4px -4px 0 #4574F5;
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.success-txt {
+    font-weight: 500;
+    margin-top: 1em;
+}
+
+
+.success-icon {
+    margin: 0.3em;
+    font-size: 6em;
+    color: #5781f7;
+}
