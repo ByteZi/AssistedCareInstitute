@@ -13,25 +13,32 @@ export default class Validator {
     if (this.form_name === 'email') return this.validateEmail(this.form_value)
     if (this.form_name === "phone") return this.validatePhone(this.form_value)
     if (this.form_name === "name") return this.validateName(this.form_value)
+    if (this.form_name === "timeFrom" || this.form_name === "timeTo" || this.form_name === "timeMeridiemTo" || this.form_name === "timeMeridiemFrom") {
+      return this.validateTime(this.form_value)
+    }
   }
 
   validateName(name) {
-  
+
     if (!name.length) return "Please enter name"
     if (name.length < 2) return 'Name must be atleast 2 characters'
+    return null
   }
 
   validateEmail(email) {
     if (email.length === 0) return 'Please enter Email';
     return this.regexEmail.test(email) ? null : "Invalid Email"
+    return null
   };
 
   validatePhone(num) {
-    if (num.length === 0) return 'Please enter phone number'
-    if (num.length > 9 || num.length < 9) return "Phone number is invalid"
-    if (num.includes(' ')) return "Invalid spaces in phone no."
-    if (!this.regexPhone.test(num)) return 'Phone contains characters'
+    if (num.length < 10 || num.lenght > 10) return 'Please enter a valid phone number'
+    return null
+  }
 
+  validateTime(time) {
+    if (time === "--") return "Please complete time selection"
+    return null
   }
 
 

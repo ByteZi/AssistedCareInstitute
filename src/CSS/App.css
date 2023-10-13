@@ -12,8 +12,8 @@
   /* schedule */
   --font-130: clamp(1.5em, 1.8vw, 1.4em);
 
-  /* banner btns/contact */
-  --font-150: clamp(0.9em, 1.8vw, 1.7em);
+  /* contact */
+  --font-150: clamp(0.8em, 1.8vw, 1.7em);
 
   /* course desc - descriptions */
   --font-170: clamp(1em, 1.7vw, 1.3em);
