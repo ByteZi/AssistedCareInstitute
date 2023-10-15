@@ -15,26 +15,27 @@ const SubmitFormBtn = ({ form, setLoading, setSuccess, setErrors }) => {
             } else if (validateErr) {
                 errObj[form.current[i].name] = validateErr
             }
-            console.log(form.current[i].name)
         }
         const errorLength = Object.values(errObj).length
-        // try {
-        //     if (errorLength > 0) throw errObj
-        //     setLoading(true)
-        //     emailjs.sendForm('service_2x4cxck', 'template_wg2ulnt', form.current, '3tiNk_K-47LEZ4niD')
-        //         .then((data) => {
-        //             console.log('Sending to email')
-        //             setLoading(true)
-        //             setSuccess(true)
-        //             console.log(data.status)
-        //         }, (error) => {
-        //             console.log(error);
-        //         });
-        // } catch (e) {
-        //     console.error(e)
-        //     setErrors(errObj)
-        // }
-        // setLoading(false)
+        try {
+            if (errorLength > 0) throw errObj
+            setLoading(true)
+            emailjs.sendForm('service_2x4cxck', 'template_wg2ulnt', form.current, '3tiNk_K-47LEZ4niD')
+                .then((data) => {
+                    console.log('Sending to email')
+                    setLoading(true)
+                    
+                    setSuccess(true)
+                    console.log(data.status)
+                    console.log('Successfully sent!')
+                }, (error) => {
+                    console.log(error);
+                });
+        } catch (e) {
+            console.error(e)
+            setErrors(errObj)
+        }
+        setLoading(false)
 
     };
 

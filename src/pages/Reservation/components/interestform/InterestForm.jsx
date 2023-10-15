@@ -1,11 +1,8 @@
 
 import './InterestForm.css'
-import './css/conditional.css'
-import { useState } from 'react';
-import { useRef } from 'react';
+import { useState, useRef } from 'react';
 import Loading from './components/Loading/Loading';
 import Success from './components/Success/Success';
-import ErrItem from './components/ErrItem/ErrItem';
 import FormInput from './components/FormInput/FormInput';
 import SubmitFormBtn from './components/SubmitFormBtn/SubmitFormBtn';
 import PhoneInput from './components/PhoneInput/PhoneInput';
@@ -34,40 +31,40 @@ const InterestForm = () => {
                                     <h1 className="interestform-header">Reserve</h1>
                                     <div ref={inputRef} className="interestform-input-con">
                                         <FormInput name={"name"} />
-                                        <ErrItem errors={errors} item={"name"} />
+                                        {errors.name && <p className="err-item">{errors.name}</p> }
 
                                         <FormInput name={"email"} />
-                                        <ErrItem errors={errors} item={"email"} />
+                                        {errors.email && <p className="err-item">{errors.email}</p> }
 
                                         <PhoneInput setPhone={setPhone} phone={phone} />
-                                        <ErrItem errors={errors} item={"phone"} />
+                                        {errors.phone && <p className="err-item">{errors.phone}</p> }
 
                                         <SelectTime />
-                                        <ErrItem errors={errors} item={"time"} />
+                                        {errors.time && <p className="err-item">{errors.time}</p> }
 
-                                        <textarea
-                                            className="interestform-textarea"
-                                            type='text' placeholder='Message'
-                                            name="message"
-                                        />
+                                            <textarea
+                                                className="interestform-textarea"
+                                                type='text' placeholder='Message'
+                                                name="message"
+                                            />
 
-                                        <SubmitFormBtn
-                                            form={form}
-                                            setErrors={setErrors}
-                                            setLoading={setLoading}
-                                            setSuccess={setSuccess}
-                                        />
-                                    </div>
+                                            <SubmitFormBtn
+                                                form={form}
+                                                setErrors={setErrors}
+                                                setLoading={setLoading}
+                                                setSuccess={setSuccess}
+                                            />
+                                        </div>
                                 </>
                         }
-                    </form >
+                                </form >
             }
-        </>
+                    </>
 
     )
 }
 
-export default InterestForm
+            export default InterestForm
 
 
 

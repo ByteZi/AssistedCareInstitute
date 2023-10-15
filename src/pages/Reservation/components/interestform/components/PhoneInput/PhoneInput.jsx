@@ -11,21 +11,20 @@ const PhoneInput = ({ phone, setPhone }) => {
         if (!val) return val
         const phone = val.replace(/[^\d]/g, '');
         const phoneLength = val.length
-        console.log(phoneLength)
-
-
         
-        if (phoneLength < 4) return phone
-        if (phoneLength < 7) return `(${phone.slice(0,3)}) ${phone.slice(3)}`
+        // if (phoneLength < 4) return phone
+        // if (phoneLength < 7) return `(${phone.slice(0,3)}) ${phone.slice(3)}`
+        // return `(${phone.slice(0,3)}) ${phone.slice(3,6)}-${phone.slice(6,10)}`
 
-        return `(${phone.slice(0,3)}) ${phone.slice(3,6)}-${phone.slice(6,10)}`
+        if (phoneLength === 10) return `(${phone.slice(0,3)}) ${phone.slice(3,6)}-${phone.slice(6,10)}`
+        return phone
         }
 
     return <input type="text"
         value={phone}
         onChange={e => handleInput(e)}
-        maxLength={20}
-        placeholder='Phone Number'
+        maxLength={10}
+        placeholder='Phone'
         name="phone"
         className="interestform-input"
     />

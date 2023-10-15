@@ -3,9 +3,9 @@ import './Head.css'
 const Head = () => {
     return (
         <div className="about-head-con flex align-center  ">
-            <div className="about-img-con flex just-center ">
+            {/* <div className="about-img-con flex just-center ">
                 <img src={require('./assets/owner/owner.jpg')} className="owner-img" alt="owner" />
-            </div>
+            </div> */}
             <div className="about-text-con flex column ">
                 <p className="about-tip h1-tip">━ About the Owner</p>
                 <h1 className="about-title">Theresa Aguirre, RN, MSN</h1>
