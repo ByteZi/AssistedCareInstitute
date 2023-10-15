@@ -3,12 +3,13 @@ import './InterestForm.css'
 import './css/conditional.css'
 import { useState } from 'react';
 import { useRef } from 'react';
-import { timeOptions, dateOptions } from './data/timeOptions'
 import Loading from './components/Loading/Loading';
 import Success from './components/Success/Success';
 import ErrItem from './components/ErrItem/ErrItem';
 import FormInput from './components/FormInput/FormInput';
 import SubmitFormBtn from './components/SubmitFormBtn/SubmitFormBtn';
+import PhoneInput from './components/PhoneInput/PhoneInput';
+import SelectTime from './components/SelectTime/SelectTIme';
 
 const InterestForm = () => {
     const form = useRef()
@@ -17,19 +18,6 @@ const InterestForm = () => {
     const [success, setSuccess] = useState(false)
     const [loading, setLoading] = useState(false)
     const [phone, setPhone] = useState('')
-
-    const formatPhoneNumber = (val) => {
-        if (!val) return val
-        const phoneNumber = val.replace(/[^\d]/g, '');
-        const phoneLength = val.length
-        // if (phoneLength > 4) return setPhone(`(${phoneNumber.slice(0, 3)} ${phoneNumber.slice(3)})`)
-        // return setPhone(`(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}`)
-        // console.log(val) 
-        return phoneNumber
-    }
-
-
-
 
     return (
         <>
@@ -51,49 +39,10 @@ const InterestForm = () => {
                                         <FormInput name={"email"} />
                                         <ErrItem errors={errors} item={"email"} />
 
-                                        <input
-                                            type="text"
-                                            value={phone}
-                                            onChange={e => setPhone(formatPhoneNumber(e.target.value))}
-                                            maxLength={10}
-                                            placeholder='Telephone'
-                                            name="phone"
-                                            className="interestform-input"
-                                        />
+                                        <PhoneInput setPhone={setPhone} phone={phone} />
                                         <ErrItem errors={errors} item={"phone"} />
 
-                                        <div className="interestform-time-con flex column align-center">
-                                            <p className="interestform-time-txt">Best time to contact:</p>
-                                            <div className="interestform-time flex space-evenly">
-                                                <div className="interestform-time-from-con">
-                                                    <select name="timeFrom">
-                                                        <option value="--" selected disabled hidden>---</option>
-                                                        {timeOptions.map((value, k) => <option key={k} value={value}>{value}</option>)}
-                                                    </select>
-
-                                                    <select name="timeMeridiemFrom" defaultValue="--">
-                                                        <option value="--" selected disabled hidden>---</option>
-                                                        <option value="AM">AM</option>
-                                                        <option value="PM">PM</option>
-                                                    </select>
-                                                </div>
-
-                                                <p className="interestform-meridiem-div inline">-</p>
-
-                                                <div className="interestform-time-to">
-                                                    <select name="timeTo">
-                                                        <option value="--" selected disabled hidden>---</option>
-                                                        {timeOptions.map((value, k) => <option key={k} value={value}>{value}</option>)}
-                                                    </select>
-
-                                                    <select name="timeMeridiemTo">
-                                                        <option value="--" selected disabled hidden>---</option>
-                                                        <option value="AM">AM</option>
-                                                        <option value="PM">PM</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <SelectTime />
                                         <ErrItem errors={errors} item={"time"} />
 
                                         <textarea

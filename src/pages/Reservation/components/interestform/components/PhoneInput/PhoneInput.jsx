@@ -1,6 +1,6 @@
 
 
-const PhoneInput = (phone, setPhone) => {
+const PhoneInput = ({ phone, setPhone }) => {
 
     const handleInput = (e) => {
         const formattedPhone = formatPhone(e.target.value)
@@ -9,22 +9,27 @@ const PhoneInput = (phone, setPhone) => {
 
     const formatPhone = (val) => {
         if (!val) return val
-        const phoneNumber = val.replace(/[^\d]/g, '');
+        const phone = val.replace(/[^\d]/g, '');
         const phoneLength = val.length
-        if (phoneLength > 4) return phoneNumber
-        if (phoneLength > 7) return `(${phoneNumber.slice(0, 3)} ${phoneNumber.slice(3)})`
-        return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}`
-   
-    }
+        console.log(phoneLength)
+
+
+        
+        if (phoneLength < 4) return phone
+        if (phoneLength < 7) return `(${phone.slice(0,3)}) ${phone.slice(3)}`
+
+        return `(${phone.slice(0,3)}) ${phone.slice(3,6)}-${phone.slice(6,10)}`
+        }
 
     return <input type="text"
         value={phone}
         onChange={e => handleInput(e)}
-        maxLength={10}
-        placeholder='Telephone'
+        maxLength={20}
+        placeholder='Phone Number'
         name="phone"
         className="interestform-input"
     />
+
 }
 
 export default PhoneInput

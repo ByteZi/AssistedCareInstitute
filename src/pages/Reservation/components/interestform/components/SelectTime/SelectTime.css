@@ -1,0 +1,21 @@
+.time-from {
+    font-size:1em;
+    
+    border-radius:5px;
+    color:#5AA8F8;
+    font-weight:600;
+}
+
+.interestform-meridiem-div{
+    margin:0 1em;
+}
+
+@media screen and (max-width:350px) {
+    .time-from{
+        font-size:0.8em;
+    }
+
+    .interestform-meridiem-div{
+        font-size:0.1em;
+    }
+}
