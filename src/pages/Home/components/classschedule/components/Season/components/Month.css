@@ -1,23 +1,24 @@
-.month-con{
-  padding:1em 0;
+.month-con {
+    padding: 1em 0;
 }
 
-.month{
+.month {
     /* background-color: #4574F5; */
-    padding:0.3em 0.5em;
+    padding: 0.3em 0.5em;
     border-radius: 10px;
     /* color:#4574F5; */
-    color:white;
-    font-size:var(--font-230);
-    margin-right:0.5em;
+    color: white;
+    font-size: var(--font-230);
+    margin-right: 0.5em;
     background-color: #4574F5;
+    font-weight:400;
 }
 
-.month-days{
-    font-size:var(--font-200);
-    font-weight:700
+.month-days {
+    font-size: var(--font-200);
+    font-weight: 700
 }
 
-.month-header{
-    font-weight:100
+.month-header {
+    font-weight: 100
 }
