@@ -6,6 +6,7 @@ const SubmitFormBtn = ({ form, setLoading, setSuccess, setErrors }) => {
 
     const SubmitMessage = async (e) => {
         e.preventDefault();
+        setLoading(true)
         const timeErr = "Please complete time selection"
         const errObj = {}
         for (let i = 0; i !== 7; i++) {
@@ -19,7 +20,7 @@ const SubmitFormBtn = ({ form, setLoading, setSuccess, setErrors }) => {
         const errorLength = Object.values(errObj).length
         try {
             if (errorLength > 0) throw errObj
-            setLoading(true)
+          
             emailjs.sendForm('service_2x4cxck', 'template_wg2ulnt', form.current, '3tiNk_K-47LEZ4niD')
                 .then((data) => {
                     console.log('Sending to email')
