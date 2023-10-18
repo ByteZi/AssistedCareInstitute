@@ -1,16 +1,23 @@
-
+.month-con{
+  padding:1em 0;
+}
 
 .month{
     /* background-color: #4574F5; */
     padding:0.3em 0.5em;
-    border-radius: 15px;
-    color:#4574F5;
+    border-radius: 10px;
+    /* color:#4574F5; */
+    color:white;
     font-size:var(--font-230);
-    margin:0.3em 0.5em 0.3em 0.5em;
-    
+    margin-right:0.5em;
+    background-color: #4574F5;
 }
 
 .month-days{
-    font-size:var(--font-100);
+    font-size:var(--font-200);
+    font-weight:700
+}
 
+.month-header{
+    font-weight:100
 }

@@ -7,7 +7,7 @@ const Season = ({ season, months, days }) => {
         // <div className=" flex">
         <div className='season-con flex just-center column align-center'>
             <h1 className='bullet-season'>{season}</h1>
-            <div className='fall flex column wrap just-center'>
+            <div className='flex wrap align-center space-between season-month-con'>
             
                 {
                     months.map((i, k) => (

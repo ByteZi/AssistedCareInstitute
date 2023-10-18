@@ -3,6 +3,10 @@
     background-color: rgb(245, 245, 245);
 }
 
+.schedule-header{
+    text-align: center;
+}
+
 
 .schedule-signup-btn {
     background-color: #3F46A3;
