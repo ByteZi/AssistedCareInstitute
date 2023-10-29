@@ -7,6 +7,11 @@
     text-align: center;
 }
 
+.schedule-desc{
+    padding:2em;
+    font-style: italic;
+    font-size:1.2em
+}
 
 .schedule-signup-btn {
     background-color: #3F46A3;

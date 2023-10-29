@@ -6,7 +6,7 @@ const Month = ({month, days, k}) => {
 
             <h3 className='month'>{month}</h3>
             <div className="month-con-details flex column">
-                <h4 classsName="month-header">Weekends</h4>
+                {/* <h4 classsName="month-header">Weekends</h4> */}
                 <p className="month-days">{days[k]}</p>
             </div>
         </div>
