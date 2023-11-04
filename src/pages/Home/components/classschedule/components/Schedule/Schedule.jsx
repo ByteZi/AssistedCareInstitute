@@ -12,7 +12,7 @@ const Schedule = () => {
       <Season
         season={"Winter 2024"}
         months={["Jan", "Feb"]}
-        days={["7, 20-21, 27-28","7, 20-21, 27-28"]}
+        days={["6-7, 20-21, 27","3, 4, 10-11, 24"]}
       />
       <Link to={"/reservation"} className="schedule-signup-btn">
         Reserve
