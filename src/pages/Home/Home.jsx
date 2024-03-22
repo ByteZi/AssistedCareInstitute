@@ -1,7 +1,7 @@
-import Banner from './components/Banner/Banner'
-import Course from './components/Course/Course'
-import CourseObjective from './components/CourseObjective/CourseObjective'
-import ClassSchedule from './components/ClassSchedule/ClassSchedule'
+import Banner from './components/banner/Banner'
+import Course from './components/course/Course'
+import CourseObjective from './components/courseobjective/CourseObjective'
+import ClassSchedule from './components/classschedule/ClassSchedule'
 import './Home.css'
 
 
