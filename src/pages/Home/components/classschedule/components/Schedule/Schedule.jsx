@@ -5,9 +5,9 @@ const Schedule = () => {
   return (
     <div className="flex align-center column">
       <Season
-        season={"Summer 2024"}
-        months={["June","July","August"]}
-        days={["1-2, 15, 29, 30", "13-14, 27-28","3"]}
+        season={"Fall 2024"}
+        months={["August","September","October"]}
+        days={["31","1, 14-15, 28-29","12, 19, 26-27"]}
       />
  
       <Link to={"/reservation"} className="schedule-signup-btn">
