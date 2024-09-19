@@ -1,21 +1,28 @@
 import "./ClassSchedule.css";
 import Price from "../../../../components/Price/Price";
-import Schedule from './components/Schedule/Schedule'
+import Schedule from "./components/Schedule/Schedule";
 
 const ClassSchedule = () => {
   // make this updatable by admin
   return (
     <div className="schedule-con column flex align-center">
       <h2 className="schedule-header">Upcoming Weekend Classes</h2>
-      <p className="schedule-desc">
-        Classes are seasonal and consists of ten (10) days. Total of 80 hours  
-      </p>
+      <div className="schedule-desc">
+        <p>
+          Classes are seasonal and consists of ten (10) days. Total of 80 hours
+        </p>
+        <div style={{ color: "red" }}>
+          <p>* PLEASE NOTE *</p>
+          <p>November classes are going to be 8:00am - 6:00pm</p>
+          <p>Regular class schedule will be returned starting 2025</p>
+        </div>
+      </div>
+      <p></p>
 
       <div className="flex space-between wrap align-center just-center">
         <Price />
-        <Schedule/>
+        <Schedule />
       </div>
-
     </div>
   );
 };

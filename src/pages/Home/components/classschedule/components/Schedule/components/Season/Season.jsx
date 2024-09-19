@@ -19,6 +19,7 @@ const Season = ({ season, months, days }) => {
                         />))
                 }
             </div>
+            <p></p>
         </div>
         // </div>
     )

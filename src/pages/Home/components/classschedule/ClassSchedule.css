@@ -1,24 +1,28 @@
 .schedule-con {
-    padding: 3em 0;
-    background-color: rgb(245, 245, 245);
+  padding: 3em 0;
+  background-color: rgb(245, 245, 245);
 }
 
-.schedule-header{
-    text-align: center;
+.schedule-header {
+  text-align: center;
 }
 
-.schedule-desc{
-    padding:2em;
-    font-style: italic;
-    font-size:1.2em
+.schedule-desc {
+  padding: 2em;
+  font-style: italic;
+  font-size: 1.2em;
+  text-align: center;
+}
+.schedule-desc > div {
+  margin-top: 1em;
 }
 
 .schedule-signup-btn {
-    background-color: #3F46A3;
-    padding: 0.5em 1em;
-    color: white;
-    border-radius: 20px;
-    font-size:1.5em;
-    border: none;
-    cursor: pointer;
+  background-color: #3f46a3;
+  padding: 0.5em 1em;
+  color: white;
+  border-radius: 20px;
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
 }

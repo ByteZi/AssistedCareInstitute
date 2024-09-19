@@ -6,8 +6,8 @@ const Schedule = () => {
     <div className="flex align-center column">
       <Season
         season={"Fall 2024"}
-        months={["August","September","October"]}
-        days={["31","1, 14-15, 28-29","12, 19, 26-27"]}
+        months={["November"]}
+        days={["14-17, 21-24"]}
       />
  
       <Link to={"/reservation"} className="schedule-signup-btn">
