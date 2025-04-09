@@ -11,11 +11,9 @@ const ClassSchedule = () => {
         <p>
           Classes are seasonal and consists of ten (10) days. Total of 80 hours
         </p>
-        <div style={{ color: "red" }}>
-          <p>* PLEASE NOTE *</p>
-          <p>November classes are going to be 8:00am - 6:00pm</p>
-          <p>Regular class schedule will be returned starting 2025</p>
-        </div>
+        {/* <div style={{ color: "red" }}>
+          
+        </div> */}
       </div>
       <p></p>
 
